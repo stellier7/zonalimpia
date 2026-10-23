@@ -3,6 +3,7 @@
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useEffect, useState } from "react";
 import { CONFIG } from "@/config";
+import { BrandLogo } from "@/components/BrandLogo";
 import { CloseIcon, MenuIcon, WhatsAppIcon } from "@/components/icons";
 import { waLink } from "@/lib/whatsapp";
 
@@ -37,14 +38,7 @@ export function Navbar() {
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:h-[4.25rem] sm:px-6 lg:px-8">
         <a href="#inicio" className="flex items-center gap-2.5">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={CONFIG.images.logo}
-            alt={CONFIG.businessName}
-            width={64}
-            height={64}
-            className="h-12 w-12 object-contain drop-shadow-sm sm:h-14 sm:w-14"
-          />
+          <BrandLogo size="nav" />
           <span className="font-heading hidden text-sm font-bold tracking-wide text-white sm:inline sm:text-base">
             {CONFIG.businessName}
           </span>

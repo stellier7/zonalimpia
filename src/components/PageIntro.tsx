@@ -2,7 +2,7 @@
 
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useEffect, useState } from "react";
-import { CONFIG } from "@/config";
+import { BrandLogo } from "@/components/BrandLogo";
 
 export function PageIntro() {
   const reduce = useReducedMotion();
@@ -24,16 +24,13 @@ export function PageIntro() {
           transition={{ duration: 0.35 }}
           aria-hidden="true"
         >
-          <motion.img
-            src={CONFIG.images.logo}
-            alt=""
-            width={160}
-            height={160}
-            className="h-28 w-28 object-contain sm:h-32 sm:w-32"
+          <motion.div
             initial={{ opacity: 0, scale: 0.92 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.4 }}
-          />
+          >
+            <BrandLogo size="intro" />
+          </motion.div>
         </motion.div>
       )}
     </AnimatePresence>
