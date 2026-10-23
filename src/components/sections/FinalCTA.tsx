@@ -13,6 +13,7 @@ export function FinalCTA() {
       imageSrc={CONFIG.images.parallax2}
       imageAlt={CONFIG.copy.ctaTitle}
       className="scroll-mt-20 py-16 sm:py-20"
+      overlayClassName="bg-gradient-to-b from-brand-navy/90 via-brand-navy/88 to-brand-navy/94"
     >
       <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_1.05fr] lg:items-start lg:px-8">
         <div>

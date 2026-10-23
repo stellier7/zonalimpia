@@ -19,7 +19,7 @@ export function About() {
           <Reveal>
             <Img
               src={CONFIG.images.owner}
-              alt={`${CONFIG.owner}, ${CONFIG.businessName}`}
+              alt={`Personal capacitado de ${CONFIG.businessName}`}
               width={800}
               height={960}
               className="aspect-[5/6] w-full overflow-hidden rounded-2xl shadow-soft ring-1 ring-brand-navy/8"

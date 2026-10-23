@@ -202,7 +202,7 @@ export const CONFIG: SiteConfig = {
     "Miembros activos de ISSA — altos estándares de calidad en limpieza profesional",
   hours: "Horarios flexibles · Cotiza por WhatsApp",
   siteUrl: "https://www.zonalimpiahn.com",
-  areasServed: ["Tegucigalpa", "San Pedro Sula", "Honduras"],
+  areasServed: ["Tegucigalpa", "San Pedro Sula", "Otra zona"],
   pricing: { enabled: false },
   services: [
     {
@@ -290,17 +290,26 @@ export const CONFIG: SiteConfig = {
     {
       id: "semanal",
       name: "Semanal",
-      bullets: [...expressPlanBullets],
+      bullets: [
+        "Visita cada semana",
+        ...expressPlanBullets,
+      ],
     },
     {
       id: "quincenal",
       name: "Quincenal",
-      bullets: [...expressPlanBullets],
+      bullets: [
+        "Visita cada 15 días",
+        ...expressPlanBullets,
+      ],
     },
     {
       id: "mensual",
       name: "Mensual",
-      bullets: [...expressPlanBullets],
+      bullets: [
+        "Visita una vez al mes",
+        ...expressPlanBullets,
+      ],
     },
   ],
   postConstructionIncludes: [
@@ -308,8 +317,7 @@ export const CONFIG: SiteConfig = {
     "Oficinas",
     "Locales comerciales",
     "Edificios",
-    "Reducción de riesgos de salud y polvo",
-    "Mejora de la calidad del aire",
+    "Reducción de polvo y riesgos de salud",
     "Aspecto profesional y protección de materiales",
   ],
   expressHowItWorks:
@@ -366,7 +374,7 @@ export const CONFIG: SiteConfig = {
     { name: "Locales comerciales", icon: "locales" },
     { name: "Centros educativos", icon: "colegios" },
     { name: "Hospitales y clínicas", icon: "clinicas" },
-    { name: "Edificios y apartamentos", icon: "plazas" },
+    { name: "Plazas y edificios", icon: "plazas" },
   ],
   benefits: [
     {
@@ -397,73 +405,73 @@ export const CONFIG: SiteConfig = {
   gallery: [
     {
       src: "/images/gallery/01.webp",
-      alt: "Espacio comercial impecable después de la limpieza",
+      alt: "Limpieza profesional de vidrios",
       width: 800,
       height: 600,
     },
     {
       src: "/images/gallery/02.webp",
-      alt: "Equipo Zona Limpia en servicio de vidrios",
+      alt: "Personal Zona Limpia en servicio",
       width: 800,
       height: 1000,
     },
     {
       src: "/images/gallery/03.webp",
-      alt: "Limpieza profesional de ventanas",
+      alt: "Espacio listo después de la limpieza",
       width: 800,
-      height: 1000,
+      height: 600,
     },
     {
       src: "/images/gallery/04.webp",
-      alt: "Especialistas en detalles — limpieza profunda",
+      alt: "Detalle de limpieza en superficies",
       width: 800,
       height: 600,
     },
     {
       src: "/images/gallery/05.webp",
-      alt: "Personal capacitado en uniformes Zona Limpia",
+      alt: "Acabados y pisos cuidados",
       width: 800,
-      height: 1000,
+      height: 600,
     },
     {
       src: "/images/gallery/06.webp",
-      alt: "Resultado de limpieza post construcción",
+      alt: "Limpieza de baños y áreas húmedas",
       width: 800,
       height: 600,
     },
     {
       src: "/images/gallery/07.webp",
-      alt: "Ambiente limpio y profesional",
+      alt: "Ambiente limpio y ordenado",
       width: 800,
       height: 600,
     },
     {
       src: "/images/gallery/08.webp",
-      alt: "Detalle de acabados después de la limpieza",
+      alt: "Limpieza de superficies en cocina",
       width: 800,
-      height: 600,
+      height: 1000,
     },
     {
       src: "/images/gallery/09.webp",
-      alt: "Superficies y acabados brillantes",
+      alt: "Equipo en limpieza de ventanas",
       width: 800,
       height: 600,
     },
     {
       src: "/images/gallery/10.webp",
-      alt: "Espacios listos para habitar o trabajar",
+      alt: "Resultado de limpieza profunda",
       width: 800,
       height: 600,
     },
     {
       src: "/images/gallery/11.webp",
-      alt: "Limpieza Express — altos estándares de calidad",
+      alt: "Personal capacitado Zona Limpia",
       width: 800,
       height: 1000,
     },
     {
       src: "/images/gallery/12.webp",
-      alt: "Servicios especiales en superficies del hogar",
+      alt: "Espacios impecables para habitar o trabajar",
       width: 800,
       height: 600,
     },
@@ -490,7 +498,7 @@ export const CONFIG: SiteConfig = {
   trustChips: [
     "Miembros activos ISSA",
     "Limpieza Express y corporativa",
-    "Honduras",
+    "Cotiza por WhatsApp",
   ],
   credit: "Sitio web por IAGO Digital",
   labels: {
@@ -556,7 +564,7 @@ export const CONFIG: SiteConfig = {
     coverageEyebrow: "Cobertura",
     coverageTitle: "Servimos en Honduras",
     coverageSubtitle:
-      "Atendemos hogares y empresas. Si estás en otra zona, escríbenos y te confirmamos disponibilidad.",
+      "Atendemos hogares y empresas en Honduras. Si estás en otra zona, escríbenos y te confirmamos disponibilidad.",
     reviewsEyebrow: "Redes",
     reviewsTitle: "Síguenos en Facebook e Instagram",
     reviewsSubtitle:
@@ -565,7 +573,7 @@ export const CONFIG: SiteConfig = {
     aboutP1:
       "En Zona Limpia / INSEMEP promovemos la limpieza como una inversión en la salud humana, el medio ambiente y una mejora en términos generales. Aumenta la productividad de tus empleados y ahorra en reparaciones con un ambiente limpio, agradable y fresco.",
     aboutP2:
-      "Sólo el 1% de los adultos afirman que una mala limpieza no afecta la percepción sobre las empresas. Cotiza con nosotros en",
+      "Solo el 1% de los adultos afirman que una mala limpieza no afecta la percepción sobre las empresas. Cotiza con nosotros — cobertura en",
     ctaEyebrow: "Contáctanos",
     ctaTitle: "¿Listo para altos estándares de limpieza?",
     ctaSubtitle:
