@@ -55,11 +55,6 @@ body {
   box-shadow: var(--shadow-soft);
 }
 
-/* Header / intro logo: upward triangle framing the full mark + wordmark */
-.brand-logo-tri {
-  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
-}
-
 /* Image placeholders */
 .img-placeholder {
   display: flex;

@@ -89,6 +89,7 @@ export type SiteConfig = {
     parallax2: string;
     owner: string;
     logo: string;
+    logoTri: string;
     issa: string;
   };
   nav: { href: string; label: string }[];
@@ -476,6 +477,7 @@ export const CONFIG: SiteConfig = {
     parallax2: "/images/parallax-2.webp",
     owner: "/images/owner.webp",
     logo: "/logo.png",
+    logoTri: "/logo-tri.png",
     issa: "/issa.png",
   },
   nav: [
